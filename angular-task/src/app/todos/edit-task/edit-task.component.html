@@ -1,0 +1,12 @@
+<div class="inline">
+  <input
+    #editedInput
+    type="text"
+    class="input-text"
+    placeholder="type todo text here"
+    [value]="((todo || {}).title || 'no data yet')"
+  />
+  <div (click)="editTask(editedInput.value, itemId)" class="add">
+    Confirm
+  </div>
+</div>

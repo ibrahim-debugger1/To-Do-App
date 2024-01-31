@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="form-contanier">
+    <div class="title">SignUp</div>
+    {{ msg }}
+    <input type="text" placeholder="Email" [(ngModel)]="email"/>
+    <input type="password" placeholder="Password" [(ngModel)]="password"/>
+    <input type="password" placeholder="Confirm Password" [(ngModel)]="confirmPassword"/>
+    <input type="text" placeholder="07xxxxxxxx" [(ngModel)]="phone"/>
+    <button type="submit" (click)="submit()">submit</button>
+    <div class="member">
+    </div>
+  </div>
+</div>

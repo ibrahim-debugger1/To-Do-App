@@ -1,0 +1,40 @@
+<div class="header">Todos</div>
+<div class="main-body">
+  <div class="todo">
+    <div class="todo-box">
+      <div class="todo-box-content">
+        <div class="title">New Todo</div>
+        <div class="inline">
+          <input
+            #taskTitle
+            type="text"
+            class="input-text"
+            placeholder="type todo text here"
+          />
+          <div (click)="addTask(taskTitle)" class="add">+ Add</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="todo-list">
+      <div class="todo-item" *ngFor="let to of todo">
+        <div class="check-box" (click)="toggleItem(to._id || '')">
+          <img
+            [ngClass]="{ completed: to.status }"
+            src="../../assets/images/done_black_24dp.svg"
+            alt="check-box"
+          />
+        </div>
+        <div class="todo-text">{{ to.title }}</div>
+        <div class="todo-controls-buttons">
+          <div (click)="editTask(to._id || '')"  class="edit-button">
+            <img src="../../assets/images/edit_black_24dp.svg" alt="" />
+          </div>
+          <div (click)="deleteTask(to._id || '')" class="delete-button">
+            <img src="../../assets/images/delete_black_24dp.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

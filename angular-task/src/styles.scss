@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+.inline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inline .add {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(255, 86, 86);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 50px ;
+  opacity: 0.8;
+
+  color: white;
+
+  &:hover {
+      opacity: 1;
+      cursor: pointer;
+  }
+}
+
+.inline .input-text {
+  width: 580px;
+  height: 30px;
+  margin: 10px ;
+}

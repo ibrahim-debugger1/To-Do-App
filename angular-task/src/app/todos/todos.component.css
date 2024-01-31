@@ -1,0 +1,101 @@
+.header {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  color: white;
+  height: 250px;
+  width: 100vw;
+  background: linear-gradient(to right, rgb(2, 228, 171), rgb(74, 215, 240));
+  text-shadow: 0px 1px 2px rgba(black, 0.2);
+  font-weight: bold;
+  font-size: 50px;
+  padding-bottom: 10px;
+}
+
+.todo-list {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 90px;
+  margin-left: 570px  ;
+  width: 700px;
+}
+
+.todo-list .todo-item {
+  background-color: rgb(237, 237, 237);
+  display: flex;
+  align-items: center;
+  padding-bottom: 15px;;
+
+}
+
+.todo-list .todo-item .check-box {
+  display: inline;
+  padding: 13px;
+}
+
+.todo-list .todo-item .todo-text {
+  padding-top: 0px;
+  padding-left : 10px;
+  font-size: 20px;
+}
+
+.todo-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-item {
+  cursor: pointer;
+  position: relative;
+}
+.todo-box-content {
+  margin: -70px;
+  border-radius: 7px;
+  background: white;
+  width: 700px;
+  box-shadow: 10px 4px 12px rgba(black, 0.6);
+  border: 1px solid black;
+}
+
+
+
+.todo-box-content .title {
+  padding: 20px 20px 20px 10px;
+  font-size: 22px ;
+  color: black;
+  font-weight: bold;
+}
+
+
+
+
+
+.todo-item .check-box img {
+  background-color: rgb(255, 255, 255);
+  border-radius: 40%;
+}
+
+.todo-item:hover .check-box img {
+  background-color: green;
+
+}
+
+.todo-item .todo-controls-buttons{
+  width: fit-content;
+  background-color: rgb(228, 228, 228);
+  display: flex;
+  position: absolute;
+  bottom: 0 ;
+  right: 0;
+}
+
+
+.todo-item .todo-controls-buttons:hover .edit-button:hover, .delete-button:hover {
+  background-color: rgb(96, 96, 96);
+}
+
+.todo-item .check-box img.completed {
+  background-color: green;
+}
